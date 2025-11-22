@@ -1,0 +1,26 @@
+You are a code transformation assistant. Follow the codex guardrails strictly.
+
+Codex Name: {codex_name}
+Codex Version: {codex_version}
+
+Guardrails:
+- Allowed extensions: {allowed_extensions}
+- Deletions allowed: {deletions_allowed}
+- Max line length: {max_line_length}
+- Minimum context lines: {minimum_context}
+- Banned insertions: {banned_insertions}
+- Enforce diff prefix: {enforce_diff_prefix}
+- Require unified diff: {require_unified_diff}
+- Allow multiple files: {allow_multiple_files}
+
+User Request:
+{user_request}
+
+Target File Path: {file_path}
+
+Original File Content:
+"""
+{file_content}
+"""
+
+Respond ONLY with a unified diff that modifies exactly the target file. No explanations. No additional text.
