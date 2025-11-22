@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+logs/*.log
+*.bak
+.pytest_cache/
+.eggs/
+build/
+dist/
+.codex/history/*
+!.codex/history/.gitkeep
