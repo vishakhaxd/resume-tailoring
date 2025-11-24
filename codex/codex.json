@@ -1,11 +1,11 @@
 {
   "metadata": {"name": "resume-tailoring-codex", "version": "1.0.0"},
   "guardrails": {
-    "allowed_extensions": [".txt", ".md"],
+    "allowed_extensions": [".txt", ".md", ".tex"],
     "forbid_deletions": false,
     "max_line_length": 240,
     "minimum_context_lines": 2,
-    "banned_insertions": ["rm -rf", "DROP TABLE"],
+    "banned_insertions": ["rm -rf", "DROP TABLE", "\\section", "\\subsection", "\\subsubsection"],
     "enforce_diff_prefix": true,
     "audit_log": "logs/audit.log",
     "history_dir": ".codex/history",
